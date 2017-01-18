@@ -3,7 +3,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = 'hello.HelloWorld'
+//mainClassName = 'hello.HelloWorld'
+mainClassName = 'hello.SampleController'
 
 // tag::repositories[]
 repositories{
@@ -25,6 +26,7 @@ jar {
 dependencies {
 	compile "joda-time:joda-time:2.2"
 	testCompile "junit:junit:4.12"
+	compile("org.springframework.boot:spring-boot-starter-web:1.4.3.RELEASE")
 }
 // end::dependencies[]
 
