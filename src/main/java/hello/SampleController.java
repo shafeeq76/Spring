@@ -12,7 +12,7 @@ public class SampleController {
     @RequestMapping("/iot")
     @ResponseBody
     String home() {
-        return "welcome to world of IOT!";
+        return "<h1> Welcome to World of IOT! </h1>";
     }
 
     public static void main(String[] args) throws Exception {
