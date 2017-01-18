@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\gs-gradle-0.1.0.jar;%APP_HOME%\lib\joda-time-2.2.jar
+set CLASSPATH=%APP_HOME%\lib\gs-gradle-0.1.0.jar;%APP_HOME%\lib\joda-time-2.2.jar;%APP_HOME%\lib\spring-boot-starter-web-1.4.3.RELEASE.jar;%APP_HOME%\lib\spring-boot-starter-1.4.3.RELEASE.jar;%APP_HOME%\lib\spring-boot-starter-tomcat-1.4.3.RELEASE.jar;%APP_HOME%\lib\hibernate-validator-5.2.4.Final.jar;%APP_HOME%\lib\jackson-databind-2.8.5.jar;%APP_HOME%\lib\spring-web-4.3.5.RELEASE.jar;%APP_HOME%\lib\spring-webmvc-4.3.5.RELEASE.jar;%APP_HOME%\lib\spring-boot-1.4.3.RELEASE.jar;%APP_HOME%\lib\spring-boot-autoconfigure-1.4.3.RELEASE.jar;%APP_HOME%\lib\spring-boot-starter-logging-1.4.3.RELEASE.jar;%APP_HOME%\lib\spring-core-4.3.5.RELEASE.jar;%APP_HOME%\lib\snakeyaml-1.17.jar;%APP_HOME%\lib\tomcat-embed-core-8.5.6.jar;%APP_HOME%\lib\tomcat-embed-el-8.5.6.jar;%APP_HOME%\lib\tomcat-embed-websocket-8.5.6.jar;%APP_HOME%\lib\validation-api-1.1.0.Final.jar;%APP_HOME%\lib\jboss-logging-3.2.1.Final.jar;%APP_HOME%\lib\classmate-1.1.0.jar;%APP_HOME%\lib\jackson-annotations-2.8.0.jar;%APP_HOME%\lib\jackson-core-2.8.5.jar;%APP_HOME%\lib\spring-aop-4.3.5.RELEASE.jar;%APP_HOME%\lib\spring-beans-4.3.5.RELEASE.jar;%APP_HOME%\lib\spring-context-4.3.5.RELEASE.jar;%APP_HOME%\lib\spring-expression-4.3.5.RELEASE.jar;%APP_HOME%\lib\logback-classic-1.1.8.jar;%APP_HOME%\lib\jcl-over-slf4j-1.7.22.jar;%APP_HOME%\lib\jul-to-slf4j-1.7.22.jar;%APP_HOME%\lib\log4j-over-slf4j-1.7.22.jar;%APP_HOME%\lib\commons-logging-1.2.jar;%APP_HOME%\lib\logback-core-1.1.8.jar;%APP_HOME%\lib\slf4j-api-1.7.22.jar
 
 @rem Execute bootdev
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %BOOTDEV_OPTS%  -classpath "%CLASSPATH%" hello.HelloWorld %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %BOOTDEV_OPTS%  -classpath "%CLASSPATH%" hello.SampleController %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
